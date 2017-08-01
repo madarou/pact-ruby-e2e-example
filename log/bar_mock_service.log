@@ -1,0 +1,70 @@
+I, [2017-08-01T13:15:55.083576 #19591]  INFO -- : Cleared interactions before example "BarClient can retrieve a thing"
+I, [2017-08-01T13:15:55.085805 #19591]  INFO -- : Registered expected interaction GET /thing
+D, [2017-08-01T13:15:55.085890 #19591] DEBUG -- : {
+  "description": "a retrieve thing request",
+  "request": {
+    "method": "get",
+    "path": "/thing",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "company": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "My big company好"
+      },
+      "factories": {
+        "json_class": "Pact::ArrayLike",
+        "contents": {
+          "location": "Sydney",
+          "capacity": 5
+        },
+        "min": 1
+      }
+    }
+  }
+}
+I, [2017-08-01T13:15:55.089936 #19591]  INFO -- : Received request GET /thing
+D, [2017-08-01T13:15:55.090006 #19591] DEBUG -- : {
+  "path": "/thing",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "User-Agent": "Faraday v0.12.2",
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip;q=1.0,deflate;q=0.6,identity;q=0.3",
+    "Connection": "close",
+    "Host": "localhost:4638",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2017-08-01T13:15:55.090135 #19591]  INFO -- : Found matching response for GET /thing
+D, [2017-08-01T13:15:55.090221 #19591] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "company": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "My big company好"
+    },
+    "factories": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "location": "Sydney",
+        "capacity": 5
+      },
+      "min": 1
+    }
+  }
+}
+I, [2017-08-01T13:15:55.092569 #19591]  INFO -- : Verifying - interactions matched for example "BarClient can retrieve a thing"
+I, [2017-08-01T13:15:55.094856 #19591]  INFO -- : Writing pact with details {:consumer=>{:name=>"Foo"}, :provider=>{:name=>"Bar"}, :pactfile_write_mode=>"overwrite", :pact_dir=>"/home/darou/workspace/pact-ruby-e2e-example/consumer/spec/pacts"}
+I, [2017-08-01T13:15:55.094922 #19591]  INFO -- : Writing pact for Bar to /home/darou/workspace/pact-ruby-e2e-example/consumer/spec/pacts/foo-bar.json

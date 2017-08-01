@@ -21,7 +21,7 @@
           "Content-Type": "application/json"
         },
         "body": {
-          "company": "My big company",
+          "company": "My big company好",
           "factories": [
             {
               "location": "Sydney",

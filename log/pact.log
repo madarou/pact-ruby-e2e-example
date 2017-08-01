@@ -1,0 +1,11 @@
+# Logfile created on 2017-08-01 13:15:54 +0800 by logger.rb/v1.2.7
+I, [2017-08-01T13:15:54.946935 #19591]  INFO -- : Starting app Bar #<Pact::MockService::App:0x0000000256e7b0> on port 4638...
+I, [2017-08-01T13:15:55.052093 #19591]  INFO -- : Started on port 4638
+I, [2017-08-01T13:15:55.081699 #19591]  INFO -- : Clearing all expectations
+I, [2017-08-01T13:15:55.090842 #19591]  INFO -- : Verifying interactions for BarClient can retrieve a thing
+D, [2017-08-01T13:15:55.095647 #19591] DEBUG -- : Supposed to be stopping
+I, [2017-08-01T13:18:03.568672 #20066]  INFO -- : Running example 'Verifying a pact between Foo and Bar A retrieve thing request with GET /thing returns a response which has status code 200'
+I, [2017-08-01T13:18:03.568804 #20066]  INFO -- : Sending GET request to path: "/thing" with headers: {"HTTP_ACCEPT"=>"application/json"}, see debug logs for body
+D, [2017-08-01T13:18:03.568832 #20066] DEBUG -- : body :
+I, [2017-08-01T13:18:03.576912 #20066]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"146"}, see debug logs for body
+D, [2017-08-01T13:18:03.576959 #20066] DEBUG -- : body: {"company":"My Company好","factories":[{"location":"Sydney","capacity":5},{"location":"Sydney","geographicCoords":"-0.145,1.4445","capacity":5}]}

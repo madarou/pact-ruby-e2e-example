@@ -3,7 +3,7 @@ class BarApp
     status = 200
     headers = {'Content-Type' => 'application/json'}
     body = {
-      "company": "My Company",
+      "company": "My Company好",
       "factories": [
         {
           "location": "Sydney",
